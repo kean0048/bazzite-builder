@@ -127,7 +127,7 @@ jobs:
           fi
 
           # FIXME: https://github.com/ublue-os/main/commit/4bec2a4283f17c8a2e3e0dfe4617e9bd23d90560
-          if [[ "${{ env.FEDORA_MAJOR_VERSION }}" -ge "39" || "${{ env.UBLUE_FLAVOR }}" == "nokmods" ]]; then
+          if [[ "${{ env.FEDORA_MAJOR_VERSION }}" -ge "40" || "${{ env.UBLUE_FLAVOR }}" == "nokmods" ]]; then
               echo "UBLUE_TARGET=nokmods" >> $GITHUB_ENV
           else
               echo "UBLUE_TARGET=kmods" >> $GITHUB_ENV
